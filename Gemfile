@@ -60,6 +60,12 @@ gem 'execjs'
 # Twitter社が提供しているCSSとJavaScriptのフレームワーク
 gem 'twitter-bootstrap-rails'
 
+#twitter bootswatch-rails
+gem 'twitter-bootswatch-rails', '~> 3.1.1'
+gem 'twitter-bootswatch-rails-helpers'
+gem 'execjs'
+gem 'less-rails'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
