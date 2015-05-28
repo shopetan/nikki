@@ -14,9 +14,13 @@
 //= require moment
 //= require bootstrap-datetimepicker/core
 //= require bootstrap-datetimepicker/pickers
+//= require jquery
+//= require jquery_ujs
+//= require flatly/loader
+//= require flatly/bootswatch
 
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require turbolinks
-//= require_tree .
+
