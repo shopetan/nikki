@@ -39,6 +39,11 @@ gem 'momentjs-rails'
 # DateTimePicker
 gem 'datetimepicker-rails', git: 'git://github.com/zpaulovics/datetimepicker-rails', tag: 'v1.0.0'
 
+# devise-bootstrap
+gem 'devise-bootstrap-views'
+gem 'devise-i18n'
+gem 'devise-i18n-views'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
