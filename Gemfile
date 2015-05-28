@@ -31,6 +31,14 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
 gem 'rails_admin'
 
+#simpleform
+gem 'simple_form'
+
+# momentjs
+gem 'momentjs-rails'
+# DateTimePicker
+gem 'datetimepicker-rails', git: 'git://github.com/zpaulovics/datetimepicker-rails', tag: 'v1.0.0'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 

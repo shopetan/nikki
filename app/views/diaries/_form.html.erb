@@ -1,45 +1,12 @@
-<%= form_for @diary, :html => { :class => "form-horizontal diary" } do |f| %>
+<%= simple_form_for @diary, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :date, as: :datetime_picker%>
+  <%= error_span(@diary[:date]) %>
+  <%= f.input :title %>
+  <%= error_span(@diary[:title]) %>
+  <%= f.input :body %>
+  <%= error_span(@diary[:body]) %>
 
-    <% if @diary.errors.any? %>
-    <div id="error_expl" class="panel panel-danger">
-      <div class="panel-heading">
-        <h3 class="panel-title"><%= pluralize(@diary.errors.count, "error") %> prohibited this diary from being saved:</h3>
-      </div>
-      <div class="panel-body">
-        <ul>
-        <% @diary.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-        </ul>
-      </div>
-    </div>
-  <% end %>
-
-  <div class="control-group">
-    <%= f.label :date, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.datetime_select :date, :use_month_numbers => true, :class => 'form-control' %>
-    </div>
-    <%= error_span(@diary[:date]) %>
-  </div>
-  <div class="control-group">
-    <%= f.label :title, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :title, :class => 'form-control' %>
-    </div>
-    <%= error_span(@diary[:title]) %>
-  </div>
-  <div class="control-group">
-    <%= f.label :body, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_area :body, :size=>"60x10",:class => 'form-control'%>
-    </div>
-    <%= error_span(@diary[:body]) %>
-  </div>
-
-
-  <%= f.submit nil, :class => 'btn btn-primary' %>
+  <%= f.button :submit, :class => 'btn-primary' %>
   <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
-            diaries_path, :class => 'btn btn-default' %>
-
+                diaries_path, :class => 'btn btn-default' %>
 <% end %>
