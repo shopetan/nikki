@@ -32,7 +32,7 @@
   <div class="control-group">
     <%= f.label :body, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :body, :class => 'form-control' %>
+      <%= f.text_area :body, :size=>"60x10",:class => 'form-control'%>
     </div>
     <%= error_span(@diary[:body]) %>
   </div>
