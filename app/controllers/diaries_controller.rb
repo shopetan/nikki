@@ -4,9 +4,10 @@ class DiariesController < ApplicationController
   # GET /diaries
   # GET /diaries.json
   def index
-    @diaries = Diary.all
+    #    @diaries = Diary.all
+    @diaries = Diary.page(params[:page]).per(10).order(:id)
   end
-
+  
   # GET /diaries/1
   # GET /diaries/1.json
   def show

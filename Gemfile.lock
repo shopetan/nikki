@@ -247,6 +247,7 @@ DEPENDENCIES
   execjs
   jbuilder (~> 2.0)
   jquery-rails
+  kaminari
   less-rails
   momentjs-rails (~> 2.9)!
   pg

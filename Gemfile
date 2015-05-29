@@ -49,6 +49,9 @@ gem 'devise-bootstrap-views'
 gem 'devise-i18n'
 gem 'devise-i18n-views'
 
+#page
+gem 'kaminari'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
