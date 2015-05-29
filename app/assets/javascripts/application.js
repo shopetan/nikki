@@ -18,11 +18,11 @@
 // You may include any languages (optional)
 //= require moment/ja
 
-//= require flatly/loader
-//= require flatly/bootswatch
-
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require turbolinks
+
+//= require flatly/loader
+//= require flatly/bootswatch
 
