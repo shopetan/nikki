@@ -1,4 +1,6 @@
 <%- model_class = Diary -%>
+
+<%= page_entries_info(@diaries)%>
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
 </div>
@@ -39,3 +41,5 @@
             new_diary_path,
             :class => 'btn btn-primary' %>
 
+<br>
+<%= paginate(@diaries) %>
