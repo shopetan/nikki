@@ -1,6 +1,7 @@
 <%= simple_form_for @diary, :html => { :class => 'form-horizontal' } do |f| %>
-  <%= f.input :date, as: :datetime_picker%>
-  <%= error_span(@diary[:date]) %>
+
+  <%= f.input :date, :as => :datetime_picker %>
+  
   <%= f.input :title %>
   <%= error_span(@diary[:title]) %>
   <%= f.input :body %>

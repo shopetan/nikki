@@ -40,10 +40,9 @@ gem 'rails_admin'
 #simpleform
 gem 'simple_form'
 
-# momentjs
-gem 'momentjs-rails'
-# DateTimePicker
-gem 'datetimepicker-rails', git: 'git://github.com/zpaulovics/datetimepicker-rails', tag: 'v1.0.0'
+#datetimepicker-rails
+gem 'momentjs-rails', '~> 2.9',  :github => 'derekprior/momentjs-rails'
+gem 'datetimepicker-rails', github: 'zpaulovics/datetimepicker-rails', branch: 'master', submodules: true
 
 # devise-bootstrap
 gem 'devise-bootstrap-views'
