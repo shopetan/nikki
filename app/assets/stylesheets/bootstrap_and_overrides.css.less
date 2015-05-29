@@ -1,5 +1,10 @@
 @import "twitter/bootstrap/bootstrap";
 
+// import bootstrap-sprockets before bootstrap if using bootstrap >= 3.2
+@import "bootstrap-sprockets";
+@import 'bootstrap';
+@import 'bootstrap-datetimepicker';
+
 // Set the correct sprite paths
 @iconSpritePath: image-url("twitter/bootstrap/glyphicons-halflings.png");
 @iconWhiteSpritePath: image-url("twitter/bootstrap/glyphicons-halflings-white.png");
