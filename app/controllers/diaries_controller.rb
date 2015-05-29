@@ -5,7 +5,7 @@ class DiariesController < ApplicationController
   # GET /diaries.json
   def index
     #    @diaries = Diary.all
-    @diaries = Diary.page(params[:page]).per(5).order(:id)
+    @diaries = Diary.page(params[:page]).per(5).reverse_order
   end
   
   # GET /diaries/1
