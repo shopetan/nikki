@@ -9,4 +9,3 @@ class HomeController < ApplicationController
     user_session
   end
 end
-
