@@ -1,4 +1,4 @@
-# coding: euc-jp
+# coding: utf-8
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -50,6 +50,9 @@ gem 'devise-i18n-views'
 
 #page
 gem 'kaminari'
+
+#ransuck
+gem 'ransack', github: 'activerecord-hackery/ransack'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
